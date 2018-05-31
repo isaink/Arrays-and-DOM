@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	</head>
+
+	<body>
+		<h1>Brand JuiceFruits</h1>
+
+
+		<input id="button" type="button" value="Click to Add" onclick="juice()" />
+
+		<h1 id="display"> </h1>
+
+		<script>
+			
+			var fruits = [];
+
+			function juice(){
+
+				var newFruits = prompt("Add new fruits");
+				fruits.push(newFruits.toLowerCase());
+				fruits.sort();
+
+				document.getElementById ("display").innerHTML = "Your chosen fruits are " + fruits.join(" with ");
+				console.log(fruits);
+			}
+			
+
+		</script>
+
+	</body>
+</html>
